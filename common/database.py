@@ -4,12 +4,12 @@ import pymongo
 
 
 class Database(object):
-    URI = os.environ.get("MONGOLAB_URI")
-    DATABASE = None
+   # URI = os.environ.get("MONGOLAB_URI")
+   # DATABASE = None
 
     @staticmethod
     def initialize():
-        client = pymongo.MongoClient(Database.URI)
+        client = pymongo.MongoClient("mongodb://Test:Test123@ds157624.mlab.com:57624/heroku_jzzwnszb")
         Database.DATABASE = client.get_default_database()
 
     @staticmethod
