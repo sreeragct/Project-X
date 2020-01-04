@@ -1,10 +1,10 @@
-
+import os
 
 import pymongo
 
 
 class Database(object):
-    URI = "mongodb://Test:Test123@ds157624.mlab.com:57624/heroku_jzzwnszb"
+    URI = os.environ.get("MONGOLAB_URI")
     DATABASE = None
 
     @staticmethod
