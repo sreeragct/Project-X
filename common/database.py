@@ -4,7 +4,7 @@ import pymongo
 
 
 class Database(object):
-    URI = "mongodb://Test:Test123@ds259528.mlab.com:59528/heroku_zptt3q6d"
+    URI = "mongodb://<dbuser>:<dbpassword>@ds157624.mlab.com:57624/heroku_jzzwnszb"
     DATABASE = None
 
     @staticmethod
