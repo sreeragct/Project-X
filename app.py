@@ -10,7 +10,7 @@ from flask import Flask, render_template, request, session, make_response
 
 app = Flask(__name__)  # '__main__'
 
-
+app.secret_key='secret123'
 
 @app.route('/')
 def home_template():
