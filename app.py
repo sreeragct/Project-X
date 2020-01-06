@@ -51,7 +51,7 @@ def register_user():
     password = request.form['password']
 
     User.register(email, password)
-
+    session['email'] = email
     return render_template("profile.html", email=session['email'])
 
 
