@@ -45,6 +45,7 @@ class User(object):
             return True
         else:
             # User exists :(
+            session['email']=None
             return False
 
     @staticmethod
