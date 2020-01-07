@@ -54,7 +54,8 @@ def register_user():
         session['email'] = email
         return render_template("profile.html", email=session['email'])
     else:
-        return render_template("login.html", session['email']=None)
+        session['email']=None
+        return render_template("login.html")
 
 
 @app.route('/blogs/<string:user_id>')
